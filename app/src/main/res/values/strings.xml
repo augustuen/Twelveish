@@ -331,18 +331,18 @@
         <item>dreiundzwanzig</item>
     </string-array>
     <string-array name="PrefixesDE">
-        <item>kurz nach</item>
-        <item>bald Viertel\u00A0nach</item>
-        <item>fast Viertel\u00A0nach</item>
+        <item>Kurz nach</item>
+        <item>Bald Viertel\u00A0nach</item>
+        <item>Fast Viertel\u00A0nach</item>
         <item>Viertel\u00A0nach</item>
-        <item>bald halb</item>
-        <item>kurz vor halb</item>
-        <item>kurz nach halb</item>
-        <item>bald Viertel\u00A0vor</item>
-        <item>fast Viertel\u00A0vor</item>
+        <item>Bald halb</item>
+        <item>Kurz vor halb</item>
+        <item>Kurz nach halb</item>
+        <item>Bald Viertel\u00A0vor</item>
+        <item>Fast Viertel\u00A0vor</item>
         <item>Viertel\u00A0vor</item>
-        <item>bald</item>
-        <item>fast</item>
+        <item>Bald</item>
+        <item>Fast</item>
     </string-array>
     <string-array name="SuffixesDE">
         <item/>

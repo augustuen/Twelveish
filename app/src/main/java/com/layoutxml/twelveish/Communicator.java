@@ -5,11 +5,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-
-import com.google.android.gms.wearable.DataClient;
-import com.google.android.gms.wearable.DataEvent;
-import com.google.android.gms.wearable.DataEventBuffer;
 import com.google.android.gms.wearable.DataItem;
 import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.PutDataMapRequest;
@@ -18,7 +13,7 @@ import com.google.android.gms.wearable.Wearable;
 
 import lombok.Getter;
 
-public class Communicator implements DataClient.OnDataChangedListener{
+public class Communicator {
     private static final String TAG = "Communicator";
     @Getter
     private final String path = "/twelveish";
@@ -51,7 +46,7 @@ public class Communicator implements DataClient.OnDataChangedListener{
         DataMapItem mDataMapItem = DataMapItem.fromDataItem(dataItem);
 
         String[] array = mDataMapItem.getDataMap().getStringArray(DATA_KEY);
-        if (array != null && array.length == 3) {
+        if(array != null && array.length >= 3){
             savePreference(array);
         }
 
@@ -128,9 +123,6 @@ public class Communicator implements DataClient.OnDataChangedListener{
     }
 
     private void savePreference(String[] preferenceArray) {
-        // TODO: create a listener in WatchFace class to force refresh
-        log("savePreference");
-
         for(int i = 0; i<preferenceArray.length; i+=3){
             switch(preferenceArray[i+2]){
                 case "String":
@@ -200,15 +192,5 @@ public class Communicator implements DataClient.OnDataChangedListener{
     private void log(String message) {
         Log.d(TAG, message);
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onDataChanged(@NonNull DataEventBuffer dataEventBuffer) {
-        for (DataEvent event : dataEventBuffer) {
-            if (event.getType() == DataEvent.TYPE_CHANGED && event.getDataItem().getUri().getPath() != null && event.getDataItem().getUri().getPath().equals(path)) {
-                DataItem dataItem = event.getDataItem();
-                processData(dataItem);
-            }
-        }
     }
 }

@@ -39,6 +39,7 @@ public class PreferenceManager {
     private boolean showComplicationAmbient;
     private boolean showDayActive;
     private boolean showDayAmbient;
+    private boolean showSuffixes;
     private boolean disableComplicationTap;
     private int mainTextSizeOffset;
     private int secondaryTextSizeOffset;
@@ -76,6 +77,7 @@ public class PreferenceManager {
         showSeconds = preferences.getBoolean(context.getString(R.string.preference_show_seconds), true);
         showComplicationActive = preferences.getBoolean(context.getString(R.string.preference_show_complications), true);
         showComplicationAmbient = preferences.getBoolean(context.getString(R.string.preference_show_complications_ambient), true);
+        showSuffixes = preferences.getBoolean(context.getString(R.string.preference_show_suffixes), true);
         fontName = preferences.getString(context.getString(R.string.preference_font), "robotolight");
         disableComplicationTap = preferences.getBoolean(context.getString(R.string.preference_tap), false);
         complicationLeftSet = preferences.getBoolean(context.getString(R.string.complication_left_set), false);

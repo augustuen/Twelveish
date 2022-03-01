@@ -198,7 +198,7 @@ public class TextGenerator extends AsyncTask<Void, Void, TextGeneratorDataWrappe
         }
 
         String suffix = "";
-        if (!roundTime) {
+        if (!roundTime && preferenceManager.isShowSuffixes()) {
             suffix = languageManager.getSuffix(minuteIndex);
         }
 

@@ -144,6 +144,12 @@ public class BooleanSwitcherActivity extends Activity {
         option.setDefaultOption(true);
         values.add(option);
 
+        option = new BooleanOption();
+        option.setName("Show suffixes");
+        option.setKey(getString(R.string.preference_show_suffixes));
+        option.setDefaultOption(true);
+        values.add(option);
+
         mAdapter.notifyDataSetChanged();
     }
 

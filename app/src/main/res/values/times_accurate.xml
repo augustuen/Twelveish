@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Prefixes_acc">
+        <item/>
+        <item/>
+        <item>a quarter past</item>
+        <item>a quarter past</item>
+        <item>almost half past</item>
+        <item>around half past</item>
+        <item>half past</item>
+        <item>half past</item>
+        <item>a quarter to</item>
+        <item>a quarter to</item>
+        <item>approaching</item>
+        <item>almost</item>
+    </string-array>
+    <string-array name="Suffixes_acc">
+        <item>ish</item>
+        <item>or so</item>
+        <item/>
+        <item>or so</item>
+        <item/>
+        <item/>
+        <item>ish</item>
+        <item>or so</item>
+        <item/>
+        <item>or so</item>
+        <item/>
+        <item/>
+    </string-array>
+
+    <string-array name="PrefixesLT_acc">
+        <item>apie</item>
+        <item>maždaug</item>
+        <item>beveik</item>
+        <item>maždaug</item>
+        <item>beveik</item>
+        <item>apie</item>
+        <item>apie</item>
+        <item>maždaug</item>
+        <item>beveik be ketvirčio</item>
+        <item>be ketvirčio</item>
+        <item>beveik</item>
+        <item>apie</item>
+    </string-array>
+    <string-array name="SuffixesLT_acc">
+        <item/>
+        <item/>
+        <item>su ketvirčiu</item>
+        <item>su ketvirčiu</item>
+        <item>su puse</item>
+        <item>su puse</item>
+        <item>su puse</item>
+        <item>su puse</item>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+    </string-array>
+
+    <string-array name="PrefixesFI_acc">
+        <item />
+        <item>viittä yli</item>
+        <item>kymmentä yli</item>
+        <item>varttia yli</item>
+        <item>kahtakymmentä yli</item>
+        <item>kohta puoli</item>
+        <item>puoli</item>
+        <item>puoli</item>
+        <item>kohta varttia vaille</item>
+        <item>varttia vaille</item>
+        <item>kymmentä vaille</item>
+        <item>lähes</item>
+    </string-array>
+    <string-array name="SuffixesFI_acc">
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+    </string-array>
+
+
+    <string-array name="PrefixesRU_acc">
+        <item/>
+        <item/>
+        <item>почти</item>
+        <item/>
+        <item>почти</item>
+        <item/>
+        <item/>
+        <item/>
+        <item>почти\u00A0без четверти</item>
+        <item>без четверти</item>
+        <item>почти</item>
+        <item/>
+    </string-array>
+    <string-array name="SuffixesRU_acc">
+        <item/>
+        <item>или\u00A0около того</item>
+        <item>с\u00A0четвертью</item>
+        <item>с\u00A0четвертью</item>
+        <item>с\u00A0половиной</item>
+        <item>с\u00A0половиной</item>
+        <item>с\u00A0половиной</item>
+        <item>с\u00A0половиной</item>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+    </string-array>
+
+    <string-array name="PrefixesDE_acc">
+        <item>kurz nach</item>
+        <item>bald Viertel nach</item>
+        <item>fast Viertel nach</item>
+        <item>Viertel nach</item>
+        <item>bald halb</item>
+        <item>kurz vor halb</item>
+        <item>kurz nach halb</item>
+        <item>bald Viertel vor</item>
+        <item>fast Viertel vor</item>
+        <item>Viertel vor</item>
+        <item>bald</item>
+        <item>fast</item>
+    </string-array>
+    <string-array name="SuffixesDE_acc">
+        <item/>
+        <item/>
+        <item/>
+        <item>oder so</item>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item>oder so</item>
+        <item/>
+        <item/>
+    </string-array>
+
+    <string-array name="PrefixesHU_acc">
+        <item/>
+        <item/>
+        <item>negyed</item>
+        <item>negyed</item>
+        <item>lassan fél</item>
+        <item>fél</item>
+        <item>fél</item>
+        <item>fél</item>
+        <item>háromnegyed</item>
+        <item>háromnegyed</item>
+        <item/>
+        <item>mindjárt</item>
+    </string-array>
+    <string-array name="SuffixesHU_acc">
+        <item>múlt</item>
+        <item>körül</item>
+        <item>lesz</item>
+        <item/>
+        <item/>
+        <item>lesz</item>
+        <item/>
+        <item>múlt</item>
+        <item/>
+        <item>múlt</item>
+        <item>lesz</item>
+        <item/>
+    </string-array>
+
+    <string-array name="PrefixesIT_acc">
+        <item/>
+        <item/>
+        <item>quasi</item>
+        <item>circa</item>
+        <item>quasi</item>
+        <item>pressapoco</item>
+        <item>circa</item>
+        <item>poco più\u00A0che</item>
+        <item>quasi</item>
+        <item/>
+        <item>quasi</item>
+        <item>pressapoco</item>
+    </string-array>
+    <string-array name="SuffixesIT_acc">
+        <item>e qualcosa</item>
+        <item>e passa</item>
+        <item>e un quarto</item>
+        <item>e un quarto</item>
+        <item>e mezza</item>
+        <item>e mezza</item>
+        <item>e mezza</item>
+        <item>e mezza</item>
+        <item>meno un quarto</item>
+        <item>meno qualcosa</item>
+        <item/>
+        <item/>
+    </string-array>
+
+    <string-array name="PrefixesES_acc">
+        <item/>
+        <item/>
+        <item>casi</item>
+        <item/>
+        <item/>
+        <item>casi</item>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item/>
+        <item>casi</item>
+    </string-array>
+    <string-array name="SuffixesES_acc">
+        <item/>
+        <item>y cinco</item>
+        <item>y cuarto</item>
+        <item>y cuarto</item>
+        <item>y veinte</item>
+        <item>y media</item>
+        <item>y media</item>
+        <item>y media pasadas</item>
+        <item>menos veinte</item>
+        <item>menos cuarto</item>
+        <item>menos diez</item>
+        <item />
+    </string-array>
+
+    <string-array name="PrefixesEL_acc">
+        <item>μόλις πέρασε</item>
+        <item />
+        <item>περίπου</item>
+        <item>πέρασε</item>
+        <item>πλησιάζει</item>
+        <item>περίπου</item>
+        <item>πέρασε</item>
+        <item>πλησιάζει</item>
+        <item>περίπου</item>
+        <item>πέρασε</item>
+        <item>πάει για</item>
+        <item>σχεδόν</item>
+    </string-array>
+    <string-array name="SuffixesEL_acc">
+        <item />
+        <item>και κάτι</item>
+        <item>και τέταρτο</item>
+        <item>και τέταρτο</item>
+        <item>και μισή</item>
+        <item>και μισή</item>
+        <item>και μισή</item>
+        <item>παρά τέταρτο</item>
+        <item>παρά τέταρτο</item>
+        <item>παρά τέταρτο</item>
+        <item />
+        <item />
+    </string-array>
+
+    <string-array name="PrefixesNL_acc">
+        <item>iets over</item>
+        <item>bijna tien over</item>
+        <item>bijna kwart over</item>
+        <item>bijna tien voor half</item>
+        <item>bijna vijf voor half</item>
+        <item>bijna half</item>
+        <item>iets over half</item>
+        <item>bijna tien over half</item>
+        <item>bijna kwart voor</item>
+        <item>bijna tien voor</item>
+        <item>bijna vijf voor</item>
+        <item>iets voor</item>
+    </string-array>
+    <string-array name="SuffixesNL_acc">
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item> uur</item>
+    </string-array>
+
+    <string-array name="PrefixesNO_acc">
+        <item />
+        <item>fem over</item>
+        <item>ti over</item>
+        <item>kvart over</item>
+        <item>ti på halv</item>
+        <item>fem på halv</item>
+        <item>halv</item>
+        <item>fem over halv</item>
+        <item>ti over halv</item>
+        <item>kvart på</item>
+        <item>ti på</item>
+        <item>fem på</item>
+    </string-array>
+    <string-array name="SuffixesNO_acc">
+        <item></item>
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+
+    <string-array name="PrefixesFR_acc">
+        <item />
+        <item>environ</item>
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item>environ</item>
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+    <string-array name="SuffixesFR_acc">
+        <item />
+        <item />
+        <item>dix</item>
+        <item>et quart</item>
+        <item>et vingt</item>
+        <item>vingt-cinq</item>
+        <item>et demi</item>
+        <item>et demi</item>
+        <item>moins vingt</item>
+        <item>moins quart</item>
+        <item>moins dix</item>
+        <item>moins cinq</item>
+    </string-array>
+
+
+    <string-array name="PrefixesPT_acc">
+        <item />
+        <item />
+        <item>quase</item>
+        <item />
+        <item>após</item>
+        <item>quase</item>
+        <item />
+        <item>após</item>
+        <item>quase</item>
+        <item />
+        <item />
+        <item>quase</item>
+    </string-array>
+    <string-array name="SuffixesPT_acc">
+        <item>e pouco</item>
+        <item>e tal</item>
+        <item>e um quarto</item>
+        <item>e um quarto</item>
+        <item>e um quarto</item>
+        <item>e meia</item>
+        <item>e meia</item>
+        <item>e meia</item>
+        <item>menos um quarto</item>
+        <item>menos um quarto</item>
+        <item>menos pouco</item>
+        <item />
+    </string-array>
+
+    <string-array name="PrefixesSV_acc">
+        <item />
+        <item>strax efter</item>
+        <item>snart kvart över</item>
+        <item>kvart över</item>
+        <item>snart halv</item>
+        <item>nästan halv</item>
+        <item>halv</item>
+        <item>lite över halv</item>
+        <item>snart kvart i</item>
+        <item>kvart i</item>
+        <item>snart</item>
+        <item>nästan</item>
+    </string-array>
+    <string-array name="SuffixesSV_acc">
+        <item>ish</item>
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+        <item>ish</item>
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+</resources>

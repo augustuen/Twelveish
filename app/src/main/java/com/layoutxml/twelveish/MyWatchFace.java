@@ -3,7 +3,6 @@
  * Created by LayoutXML.
  *
  */
-
 package com.layoutxml.twelveish;
 
 import android.app.Notification;
@@ -52,9 +51,9 @@ import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
-import com.layoutxml.twelveish.config.ComplicationConfigActivity;
+// import com.layoutxml.twelveish.config.ComplicationConfigActivity;
 import com.layoutxml.twelveish.activities.list_activities.ActivityImageViewActivity;
-import com.layoutxml.twelveish.objects.WordClockTaskWrapper;
+// import com.layoutxml.twelveish.objects.WordClockTaskWrapper;
 
 import java.lang.ref.WeakReference;
 import java.util.Calendar;
@@ -108,7 +107,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
     private float basey = -1;
     private int lastSignificantMinutes = -1;
     private int lastSignificantHours = -1;
-    private WordClockTask wordClockTask;
+    // private WordClockTask wordClockTask;
     private int secondaryTextSizeDP = 14;
     //SharedPreferences:
     private int backgroundColor;
@@ -184,7 +183,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
         return new Engine();
     }
 
-    public static int getComplicationId(ComplicationConfigActivity.ComplicationLocation complicationLocation) {
+    /*public static int getComplicationId(ComplicationConfigActivity.ComplicationLocation complicationLocation) {
         switch (complicationLocation) {
             case BOTTOM:
                 return BOTTOM_COMPLICATION_ID;
@@ -237,7 +236,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
             complicationDrawable.setTitleColorAmbient(secondaryColorAmbient);
             complicationDrawable.draw(canvas, currentTimeMillis);
         }
-    }
+    }*/
 
     private static class EngineHandler extends Handler {
         private final WeakReference<MyWatchFace.Engine> mWeakReference;
@@ -259,7 +258,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
         }
     }
 
-    private class Engine extends CanvasWatchFaceService.Engine implements DataClient.OnDataChangedListener, WordClockListener {
+    private class Engine extends CanvasWatchFaceService.Engine implements DataClient.OnDataChangedListener{
 
         private final Handler mUpdateTimeHandler = new EngineHandler(this);
         private Calendar mCalendar;
@@ -741,12 +740,6 @@ public class MyWatchFace extends CanvasWatchFaceService {
                 }
             }, 5000);
 
-            if (wordClockTask!=null) {
-                if (wordClockTask.getStatus()!= AsyncTask.Status.FINISHED) {
-                    wordClockTask.cancel(true);
-                }
-                wordClockTask = null;
-            }
         }
 
         /**
@@ -1077,10 +1070,6 @@ public class MyWatchFace extends CanvasWatchFaceService {
                     hourText -= 12;
                 if (hourText == 0 && !militaryTextTime)
                     hourText = 12;
-                wordClockTask = new WordClockTask(new WeakReference<Context>(getApplicationContext()),font,capitalisation,hourText,minutes,index,Prefixes,Suffixes,
-                        PrefixNewLine,SuffixNewLine,language,true,false,complicationLeftSet,complicationRightSet,bounds.width(),
-                        bounds.height(),firstSeparator,mChinSize,mainTextOffset,new WeakReference<WordClockListener>(this));
-                wordClockTask.execute();
 
                 significantTimeChange = false;
             }
@@ -1095,23 +1084,12 @@ public class MyWatchFace extends CanvasWatchFaceService {
             //Draw complication
             if (((mAmbient && showComplicationAmbient) || (!mAmbient && showComplication)) && (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)) {
                 long now = System.currentTimeMillis();
-                drawComplications(canvas, now);
             }
         }
 
         /**
          * Receives word clock text
-         * @param wordClockTaskWrapper wordClockTaskWrapper
-         */
-        @Override
-        public void wordClockListener(WordClockTaskWrapper wordClockTaskWrapper) {
-            basey = wordClockTaskWrapper.getBasey();
-            text2 = wordClockTaskWrapper.getText();
-            prefs.edit().putInt(getString(R.string.main_text_size_real),(int)wordClockTaskWrapper.getTextSize()).apply();
-            mTextPaint2.setTextSize(wordClockTaskWrapper.getTextSize()+mainTextOffset);
-            x = wordClockTaskWrapper.getX();
-            invalidate();
-        }
+         *
 
         /**
          * Automatically generated method

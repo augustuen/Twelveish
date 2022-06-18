@@ -80,6 +80,12 @@ public class BooleanSwitcherActivity extends Activity {
         option.setDefaultOption(true);
         values.add(option);
 
+        option = new BooleanOption();
+        option.setName("Accurate mode");
+        option.setKey(getString(R.string.preference_accurate_mode));
+        option.setDefaultOption(false);
+        values.add(option);
+
         mAdapter.notifyDataSetChanged();
     }
 

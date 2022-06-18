@@ -38,6 +38,7 @@
     <string name="preference_show_day_ambient">showDayAmbient</string>
     <string name="preference_tap">tapComplicationDisable</string>
     <string name="preference_legacy_word_arrangement">legacyWords</string>
+    <string name="preference_accurate_mode">accurateMode</string>
     <string name="showed_rate">showedRate</string>
     <string name="showed_tutorial">showedTutorial</string>
     <string name="showed_donate">showedDonate</string>

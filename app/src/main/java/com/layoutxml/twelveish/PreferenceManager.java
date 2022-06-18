@@ -46,6 +46,7 @@ public class PreferenceManager {
     private String fontName;
     private boolean complicationLeftSet;
     private boolean complicationRightSet;
+    private boolean accurateMode;
     private Typeface font;
     
 
@@ -84,6 +85,7 @@ public class PreferenceManager {
         complicationRightSet = preferences.getBoolean(context.getString(R.string.complication_right_set), false);
         mainTextSizeOffset = preferences.getInt(context.getString(R.string.main_text_size_offset), 0);
         secondaryTextSizeOffset = preferences.getInt(context.getString(R.string.secondary_text_size_offset), 0);
+        accurateMode = preferences.getBoolean(context.getString(R.string.preference_accurate_mode), false);
         loadFont();
     }
 
@@ -185,6 +187,9 @@ public class PreferenceManager {
 
         preferences.add("legacyWords");
         preferences.add(Boolean.toString(false)); // TODO: remove altogether
+
+        preferences.add("accurateMode");
+        preferences.add(Boolean.toString(accurateMode));
 
         return preferences;
     }

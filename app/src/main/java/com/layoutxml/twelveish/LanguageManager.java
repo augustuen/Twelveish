@@ -72,8 +72,14 @@ public class LanguageManager {
                 separateSuffix = new boolean[]{false, false, false, false, false, false, false, false, false, false, false, false};
                 break;
             case "no":
-                prefixes = context.getResources().getStringArray(R.array.PrefixesNO);
-                suffixes = context.getResources().getStringArray(R.array.SuffixesNO);
+                if(preferences.getBoolean(context.getString(R.string.preference_accurate_mode), false)){
+                    prefixes = context.getResources().getStringArray(R.array.PrefixesNO_acc);
+                    suffixes = context.getResources().getStringArray(R.array.SuffixesNO_acc);
+                }else{
+                    prefixes = context.getResources().getStringArray(R.array.PrefixesNO);
+                    suffixes = context.getResources().getStringArray(R.array.SuffixesNO);
+                }
+
                 weekdays = context.getResources().getStringArray(R.array.WeekDaysNO);
                 hours = context.getResources().getStringArray(R.array.ExactTimesNO);
                 timeShift = new int[]{0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1};
